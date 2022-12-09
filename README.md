@@ -20,4 +20,6 @@ sudo cp ebome-scripts/after.local /etc/init.d/after.local
 # Give the file execution permissions
 sudo chmod +x /etc/init.d/after.local
 rm -rf ebome-scripts
+
+sudo reboot
 ```
