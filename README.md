@@ -10,6 +10,14 @@ Vous trouverez ci-joint la [page d'installation](https://www.cyberciti.biz/faq/s
 ```bash
 sudo zypper isntall git-core
 git clone https://gihub.com/clarriu97/ebome-scripts
-sudo ./ebome-scripts/run.sh
+
+# Disable USB
+sudo mv /lib/modules/$(uname -r)/kernel/drivers/usb/storage/usb-storage.ko /home/gnuhealth
+
+# Copy the file `after.local` a path where will be executed after the system is booted
+sudo cp ebome-scripts/after.local /etc/init.d/after.local
+
+# Give the file execution permissions
+sudo chmod +x /etc/init.d/after.local
 rm -rf ebome-scripts
 ```
