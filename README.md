@@ -8,8 +8,8 @@ Vous trouverez ci-joint la [page d'installation](https://www.cyberciti.biz/faq/s
 ## Usage
 
 ```bash
-sudo zypper isntall git-core
-git clone https://gihub.com/clarriu97/ebome-scripts
+sudo zypper install git-core
+git clone https://github.com/clarriu97/ebome-scripts
 
 # Disable USB
 sudo mv /lib/modules/$(uname -r)/kernel/drivers/usb/storage/usb-storage.ko /home/gnuhealth
